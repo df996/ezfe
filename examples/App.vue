@@ -1,8 +1,16 @@
 <template>
   <div>
-    <Button block disabled>测试button</Button>
+    <div><Button v-on:click='a' :disabled='false'>测试button</Button></div>
+    <div><Button type='default'>哈哈哈</Button></div>
+    <div><Button type='dashed' v-on:click='a' :disabled='false'>测试button</Button></div>
+    <div><Button ghost type='default'>哈哈哈</Button></div>
   </div>
 </template>
+<style>
+div {
+  padding: 20px 0;
+}
+</style>
 
 <script>
 import message from '@ezfe/message'
@@ -23,6 +31,12 @@ export default {
 
   created () {
     message.success ('App.vue')
+  },
+
+  methods: {
+    a () {
+      alert (1)
+    }
   }
 }
 </script>

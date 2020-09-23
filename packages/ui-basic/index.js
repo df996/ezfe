@@ -1,3 +1,3 @@
-import basic from './src/basic.vue'
+import basic from './src/basic.js'
 
 export default basic
