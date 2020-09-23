@@ -1,6 +1,6 @@
 {
   "name": "@ezfe/message",
-  "version": "0.0.3-alpha.0",
+  "version": "0.0.0-alpha.0",
   "description": "测试",
   "author": "ezfe (1236192@qq.com)",
   "license": "MIT",
@@ -12,6 +12,5 @@
   },
   "dependencies": {
     "vue": "^2.6.12"
-  },
-  "gitHead": "00c2a7b4aab143aec833f36c0241f11d1d42a7f2"
+  }
 }
