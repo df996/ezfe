@@ -1,9 +1,12 @@
 <template>
-  <div>1</div>
+  <div>
+    <Button block disabled>测试button</Button>
+  </div>
 </template>
 
 <script>
 import message from '@ezfe/message'
+import Button from '@ezfe/button'
 // message.success ('1111success')
 // message.error ('1111error', function () {
 //   console.log ('22')
@@ -16,6 +19,7 @@ import message from '@ezfe/message'
 
 export default {
   name: 'APP',
+  components: {Button},
 
   created () {
     message.success ('App.vue')
