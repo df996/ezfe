@@ -1,9 +1,10 @@
 {
   "name": "@ezfe/tooltip",
   "version": "0.0.1",
-  "main": "index.js",
+  "description": "测试",
   "author": "ezfe (1236192@qq.com)",
   "license": "MIT",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "directory": "packages/tooltip",
