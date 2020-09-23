@@ -1,6 +1,6 @@
 {
   "name": "ezfe",
-  "private": true,
+  "private": false,
   "workspaces": [
     "packages/*"
   ],
