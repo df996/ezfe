@@ -1,0 +1,15 @@
+{
+  "name": "@ezfe/message",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "ezfe (1236192@qq.com)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "directory": "packages/message",
+    "url": "git+https://github.com/dafeng0x00/ezfe.git"
+  },
+  "dependencies": {
+    "vue": "^2.6.12"
+  }
+}
