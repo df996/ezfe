@@ -1,42 +1,23 @@
 <template>
-  <div>
-    <div><Button v-on:click='a' :disabled='false'>测试button</Button></div>
-    <div><Button type='default'>哈哈哈</Button></div>
-    <div><Button type='dashed' v-on:click='a' :disabled='false'>测试button</Button></div>
-    <div><Button ghost type='default'>哈哈哈</Button></div>
-  </div>
+  <div>{{a}}</div>
 </template>
-<style>
-div {
-  padding: 20px 0;
+
+<script lang='ts'>
+import {reactive, ref, onMounted, defineComponent, computed} from 'vue'
+import {Vue, Options, setup} from 'vue-class-component'
+
+interface UserInfo {
+  username: string,
+  password: string
 }
-</style>
 
-<script>
-import message from '@ezfe/message'
-import Button from '@ezfe/button'
-// message.success ('1111success')
-// message.error ('1111error', function () {
-//   console.log ('22')
-// }, 22)
-// message.info ('111info', 33, () => console.log ('callback'))
-// message.warn ('1111warn', function () {
-//   console.log ('1111')
-// })
-// message.warning ('1111warning', 11)
+const AAA: UserInfo = setup<UserInfo> (() => {
+  return {username: '1', password: '2'}
+})
 
-export default {
-  name: 'APP',
-  components: {Button},
-
-  created () {
-    message.success ('App.vue')
-  },
-
-  methods: {
-    a () {
-      alert (1)
-    }
-  }
+@Options ({
+  name: 'App'
+})
+export default class App extends Vue {
 }
 </script>
