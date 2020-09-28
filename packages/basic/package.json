@@ -1,5 +1,5 @@
 {
-  "name": "@ezfe/ui-basic",
+  "name": "@ezfe/basic",
   "version": "0.0.1-alpha.0",
   "description": "测试",
   "author": "ezfe (1236192@qq.com)",
@@ -11,7 +11,9 @@
     "url": "git+https://github.com/dafeng0x00/ezfe.git"
   },
   "peerDependencies": {
-    "vue": ">=2.6.0"
+    "core-js": "^3.6.5",
+    "vue": ">=3.0.0-0",
+    "vue-class-component": ">=3.0.0-0"
   },
   "publishConfig": {
     "access": "public"
