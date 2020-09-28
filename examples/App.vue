@@ -1,5 +1,5 @@
 <template>
-  <div>{{a}}</div>
+  <div>{{w.username}}</div>
 </template>
 
 <script lang='ts'>
@@ -20,8 +20,10 @@ const AAA: UserInfo = setup<UserInfo> (() => {
   name: 'App'
 })
 export default class App extends Vue {
+  w: UserInfo = AAA
   created () {
-    console.log (basic)
+    console.log (basic, this.w)
+    setTimeout (() => this.w.username = '11111', 3000)
   }
 }
 </script>
