@@ -1,23 +1,10 @@
 <template>
-  <div>{{a}}</div>
+  <div></div>
 </template>
 
 <script lang='ts'>
-import {reactive, ref, onMounted, defineComponent, computed} from 'vue'
-import {Vue, Options, setup} from 'vue-class-component'
-
-interface UserInfo {
-  username: string,
-  password: string
-}
-
-const AAA: UserInfo = setup<UserInfo> (() => {
-  return {username: '1', password: '2'}
-})
-
-@Options ({
+import {} from '@ezfe/http-request-decorator'
+export default {
   name: 'App'
-})
-export default class App extends Vue {
 }
 </script>
