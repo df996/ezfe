@@ -1,11 +1,19 @@
 <template>
-  <Button></Button>
+  <Button :test="test"></Button>
 </template>
 
 <script lang='ts'>
 import Button from '@ezfe/button'
 export default {
   name: 'App',
-  components: {Button}
+  components: {Button},
+
+  data () {
+    return {
+      test: {
+        aaa: '222'
+      }
+    }
+  }
 }
 </script>

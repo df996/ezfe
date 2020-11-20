@@ -5,7 +5,6 @@
   "author": "ezfe (1236192@qq.com)",
   "license": "MIT",
   "main": "index.ts",
-  "types": "shims-vue.d.ts",
   "repository": {
     "type": "git",
     "directory": "packages/button",
