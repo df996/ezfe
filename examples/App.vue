@@ -1,9 +1,11 @@
 <template>
-  <div></div>
+  <Button></Button>
 </template>
 
 <script lang='ts'>
+import Button from '@ezfe/button'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {Button}
 }
 </script>

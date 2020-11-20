@@ -4,7 +4,8 @@
   "description": "测试",
   "author": "ezfe (1236192@qq.com)",
   "license": "MIT",
-  "main": "index.js",
+  "main": "index.ts",
+  "types": "shims-vue.d.ts",
   "repository": {
     "type": "git",
     "directory": "packages/button",
@@ -12,8 +13,7 @@
   },
   "peerDependencies": {
     "core-js": "^3.6.5",
-    "vue": ">=3.0.0-0",
-    "vue-class-component": ">=3.0.0-0"
+    "vue": ">=3.0.0-0"
   },
   "publishConfig": {
     "access": "public"
