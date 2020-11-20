@@ -1,3 +1,5 @@
-import basic from './src/basic'
+import BaseProps from './src/basic'
 
-export default basic
+export * from './src/basic'
+
+export default BaseProps

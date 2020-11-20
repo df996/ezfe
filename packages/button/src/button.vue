@@ -1,26 +1,25 @@
 <template>
-  <div class='ezfe-button'>{{test.aaa}}</div>
+  <div class='ezfe-button'>111</div>
 </template>
 
 <script lang='ts'>
 import './button.less'
 import {defineComponent, PropType} from 'vue'
+import BaseProps, {Props} from '@ezfe/basic'
 
-export interface ButtonProps{
-  aaa: string,
-  bbb: string
+interface ButtonProps extends Props {
+  aa:number
 }
 
 export default defineComponent ({
+  mixins: [BaseProps],
+
   props: {
-    test: {
-      type: Object as PropType<ButtonProps>,
-      required: true
-    }
+    aa: {default: 1}
   },
 
-  setup (props) {
-    console.log (props.test)
+  setup (props: ButtonProps) {
+    console.log (props.disabled, props.size, props.aa)
   }
 })
 
