@@ -1,5 +1,7 @@
-import BaseProps from './src/basic'
+import BaseProps, {Props} from './src/basic'
 
-export * from './src/basic'
+export {
+  Props
+}
 
 export default BaseProps

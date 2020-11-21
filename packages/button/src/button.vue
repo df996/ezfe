@@ -1,25 +1,50 @@
 <template>
-  <div class='ezfe-button'>111</div>
+  <div :class='classList'>{{cssPrefix}} {{a}}</div>
 </template>
 
 <script lang='ts'>
 import './button.less'
-import {defineComponent, PropType} from 'vue'
-import BaseProps, {Props} from '@ezfe/basic'
 
-interface ButtonProps extends Props {
-  aa:number
-}
+import {defineComponent, PropType, inject, Ref, ref, computed} from 'vue'
+
+export type size = 'large' | 'middle' | 'small'
+export const cssModule = defineComponent ({
+  setup (props) {
+    const cssPrefix = inject<Ref<string>> ('ezfe-css-prefix') || ref('ezui')
+    return {cssPrefix}
+  }
+})
 
 export default defineComponent ({
-  mixins: [BaseProps],
-
   props: {
-    aa: {default: 1}
+    size: {type: String as PropType<size>},
+    disabled: {type: Boolean},
+    block: {type: Boolean},
+    type: {type: String, default: 'primary'},
+    danger: {type: Boolean},
+    ghost: {type: Boolean},
+    href: {type: String, default: ''},
+    loading: {type: Boolean},
+    shape: {type: String, default: 'default'},
+    target: {type: String, default: ''}
   },
 
-  setup (props: ButtonProps) {
-    console.log (props.disabled, props.size, props.aa)
+  computed: {
+    classList (): Array<string> {
+      const {cssPrefix} = this
+
+      return [
+        `${cssPrefix}-button`
+      ]
+    }
+  },
+
+  setup (props, context) {
+    let {cssPrefix} = cssModule
+
+    return {
+      cssPrefix
+    }
   }
 })
 
