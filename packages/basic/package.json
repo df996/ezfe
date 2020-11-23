@@ -11,9 +11,7 @@
     "url": "git+https://github.com/dafeng0x00/ezfe.git"
   },
   "peerDependencies": {
-    "core-js": "^3.6.5",
-    "vue": ">=3.0.0-0",
-    "vue-class-component": ">=3.0.0-0"
+    "vue": "^3.0.2"
   },
   "publishConfig": {
     "access": "public"

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vite App</title>
+</head>
+<body>
+  <div id="app"></div>
+  <script type="module" src="/examples/main.js"></script>
+</body>
+</html>
+
+<script src="https://gw.alipayobjects.com/as/g/h5-lib/alipayjsapi/3.1.1/alipayjsapi.inc.min.js"></script>
+
+<button id="J_btn" class="btn btn-default">选择联系人电话</button>
+<script>
+  var btn = document.querySelector('#J_btn');
+  btn.addEventListener('click', function(){
+    ap.choosePhoneContact(function(res){
+      ap.alert('姓名：' + res.name + '\n号码：' + res.mobile);
+    });
+  });
+</script>

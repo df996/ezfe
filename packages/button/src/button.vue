@@ -65,7 +65,7 @@ export default defineComponent ({
         styleClassList.push (this.type)
       }
 
-      return styleClassList.map (styleClass => styleClass == '' ? 
+      return styleClassList.map (styleClass => styleClass == '' ?
         `${cssPrefix}-button` : `${cssPrefix}-button-${styleClass}`)
     }
   },
