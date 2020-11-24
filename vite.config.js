@@ -6,21 +6,21 @@ module.exports = {
   //    console.log (id, arguments)
   //  }
   //}]
-  resolvers: [
-    {
-      requestToFile (publicPath, root) {
-        console.log ('-Request to file-----------------------------------------')
-        console.log (publicPath, root)
-        console.log ('---------------------------------------------------------')
-      },
+  //resolvers: [
+  //  {
+  //    requestToFile (publicPath, root) {
+  //      console.log ('-Request to file-----------------------------------------')
+  //      console.log (publicPath, root)
+  //      console.log ('---------------------------------------------------------')
+  //    },
 
-      alias (id) {
-        console.log ('-Alias---------------------------------------------------')
-        console.log (id)
-        console.log ('---------------------------------------------------------')
-      }
-    }
-  ]
+  //    alias (id) {
+  //      console.log ('-Alias---------------------------------------------------')
+  //      console.log (id)
+  //      console.log ('---------------------------------------------------------')
+  //    }
+  //  }
+  //]
 }
 
 

@@ -12,9 +12,7 @@
   },
   "devDependencies": {
     "@vue/compiler-sfc": "^3.0.2",
-    "less": "^3.0.4",
-    "less-loader": "^5.0.0",
-    "postcss": "8.1.0",
+    "less": "^3.12.2",
     "typescript": "~3.9.3",
     "vite": "^1.0.0-rc.9"
   },

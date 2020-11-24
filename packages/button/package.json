@@ -12,7 +12,7 @@
     "url": "git+https://github.com/dafeng0x00/ezfe.git"
   },
   "peerDependencies": {
-    "@ezfe/basic": ">=0.0.1-alpha.0",
+    "@ezfe/basic": "^0.0.1-alpha.0",
     "vue": "^3.0.2"
   },
   "publishConfig": {

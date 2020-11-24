@@ -71,7 +71,8 @@ export default defineComponent ({
   },
 
   setup (props, context) {
-    const cssPrefix = inject<Ref<string>> ('ezfe-css-prefix') || ref('ezfe')
+    const cssPrefix = inject<Ref<string>> ('ezfe-css-prefix', ref('ezfe'))
+
     return {
       cssPrefix
     }
