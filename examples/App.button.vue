@@ -43,7 +43,7 @@
       <Button shape="round" block>SSSSSSSSSS</Button>
     </div>
 
-    <div><Button size='small'>small</Button></div>
+    <div><XButton size='small'>small</XButton></div>
   </div>
 </template>
 
@@ -53,11 +53,12 @@ declare const window: Window & { __ezfe__css__prefix__: string}
 window.__ezfe__css__prefix__ = '1111'
 
 import Button from '@ezfe/button'
+import Basic from '@ezfe/basic'
 import {provide, ref} from 'vue'
 
 export default {
   name: 'App',
-  components: {Button},
+  components: {Button, XButton: Button},
   methods: {
     clickHandler (event: any) {
       alert (1)

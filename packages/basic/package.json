@@ -5,6 +5,7 @@
   "author": "ezfe (1236192@qq.com)",
   "license": "MIT",
   "main": "index.ts",
+  "types": "index.d.ts",
   "repository": {
     "type": "git",
     "directory": "packages/ui-basic",

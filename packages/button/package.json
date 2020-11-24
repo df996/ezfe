@@ -5,7 +5,7 @@
   "author": "ezfe (1236192@qq.com)",
   "license": "MIT",
   "main": "index.ts",
-  "types": "type.d.ts",
+  "types": "index.d.ts",
   "repository": {
     "type": "git",
     "directory": "packages/button",
@@ -20,8 +20,5 @@
   },
   "dependencies": {
     "@ezfe/basic": "0.0.1-alpha.0"
-  },
-  "devDependencies": {
-    "postcss-import": "^13.0.0"
   }
 }
