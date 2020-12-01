@@ -4,16 +4,21 @@
   "description": "测试",
   "author": "ezfe (1236192@qq.com)",
   "license": "MIT",
-  "main": "index.js",
+  "main": "index.ts",
+  "types": "index.d.ts",
   "repository": {
     "type": "git",
     "directory": "packages/input",
     "url": "git+https://github.com/dafeng0x00/ezfe.git"
   },
   "peerDependencies": {
-    "vue": ">=2.6.0"
+    "@ezfe/basic": "^0.0.1-alpha.0",
+    "vue": "^3.0.2"
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "@ezfe/basic": "0.0.1-alpha.0"
   }
 }
