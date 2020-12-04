@@ -1,0 +1,40 @@
+@import '@ezfe/basic/src/style/index.less';
+
+@ezfe-input: ~'@{ezfe}-input';
+@input-padding: 0 8px;
+
+.@{ezfe-input}-wrapper {
+  border-style: @border-style;
+  border-width: @border-width;
+  border-color: @border-color;
+  border-radius: @border-radius;
+  transition: all .3s;
+  &:hover,
+  &-focused {
+    border-color: @primary-color;
+  }
+
+  &-focused {
+    box-shadow: 0 0 0 2px color(fade(@primary-color, 15%))
+  }
+
+  .@{ezfe-input} {
+    border: none;
+    height: @height-middle;
+    padding: 0;
+    outline: none;
+    font-size: @font-size;
+    padding: @input-padding;
+    color: @text-color;
+
+    &-small {
+      height: @height-small;
+      font-size: @font-size-small;
+    }
+
+    &-large {
+      height: @height-large;
+      font-size: @font-size-large;
+    }
+  }
+}
