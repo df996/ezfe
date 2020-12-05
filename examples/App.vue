@@ -1,17 +1,21 @@
 <template>
   <div>
-    <Input size='large' />
-    <Input disabled />
-    <Input size='small' block />
+    <Input type='text' size='large' />
+    <Input type='number' disabled />
+    <Input type='password' size='small' block />
+
+    <Select></Select>
   </div>
 </template>
 
 <script>
 import Input from '@ezfe/input'
+import Select from '@ezfe/select'
+
 import {provide, ref} from 'vue'
 export default {
   name: 'APP',
-  components: {Input},
+  components: {Input, Select},
 
   setup () {
     //const a = ref ('wwww')

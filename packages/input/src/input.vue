@@ -1,7 +1,7 @@
 <template>
   <div :class='styleClass.wrapper'>
     <slot name='before'></slot>
-    <input @blur='focused = false' @focus='focused = true' :class='styleClass.input' :type='inputType' />
+    <input @blur='focused = false' @focus='focused = true' :class='styleClass.input' :type='type' />
     <slot name='after'></slot>
   </div>
 </template>

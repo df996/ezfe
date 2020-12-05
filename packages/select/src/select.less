@@ -1,0 +1,28 @@
+@import '@ezfe/basic/src/style/index.less';
+
+@ezfe-select: ~'@{ezfe}-select';
+
+
+.@{ezfe-select} {
+  display: inline-flex;
+  border-style: @border-style;
+  border-width: @border-width;
+  border-color: @border-color;
+  border-radius: @border-radius;
+  transition: all .3s;
+  width: 200px;
+  padding: @input-padding;
+  height: @height-middle;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover,
+  &-actived {
+    border-color: @input-actived-border-color;
+  }
+
+  &-actived {
+    box-shadow: 0 0 0 2px @input-actived-box-shadow-color;
+  }
+}
