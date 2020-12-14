@@ -4,7 +4,7 @@
   "description": "测试",
   "author": "ezfe (1236192@qq.com)",
   "license": "MIT",
-  "main": "index.js",
+  "main": "index.ts",
   "types": "index.d.ts",
   "repository": {
     "type": "git",

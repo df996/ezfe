@@ -1,16 +1,21 @@
 <template>
   <div :class='styleClassList'>
-    1
+    <Dropdown>
+      <slot name='default'></slot>
+    </Dropdown>
   </div>
 </template>
 
 <script lang='ts'>
-import './select.less';
+import './select.less'
+import Dropdown from '@ezfe/dropdown'
 import {defineComponent, PropType, inject, Ref, ref} from 'vue'
 
 type size = 'large' | 'middle' | 'small'
 
 export default defineComponent ({
+  name: 'EZFE-Select',
+  components: {Dropdown},
   props: {
     size: {type: String as PropType<size>, default: 'middle'},
     disabled: {type: Boolean},

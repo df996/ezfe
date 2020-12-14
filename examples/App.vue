@@ -4,18 +4,30 @@
     <Input type='number' disabled />
     <Input type='password' size='small' block />
 
-    <Select></Select>
+    <Select>
+      <Option v-for='i of x' :key='i'>{{i}}</Option>
+    </Select>
   </div>
 </template>
 
 <script>
 import Input from '@ezfe/input'
-import Select from '@ezfe/select'
+import Select, {Option} from '@ezfe/select'
 
 import {provide, ref} from 'vue'
 export default {
   name: 'APP',
   components: {Input, Select},
+
+  data () {
+    return {
+      x: 10
+    }
+  },
+
+  created () {
+    setInterval (() => this.x += 10, 5000)
+  },
 
   setup () {
     //const a = ref ('wwww')
